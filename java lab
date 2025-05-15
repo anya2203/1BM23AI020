@@ -1,0 +1,74 @@
+
+1A)
+import java.util.Scanner;
+public class GymMembershipManager {
+ public static void main(String[] args) {
+ Scanner scanner = new Scanner(System.in);
+ System.out.println(&quot;Welcome to the Gym Membership Management System!&quot;);
+ System.out.print(&quot;Enter member name: &quot;);
+ String name = scanner.nextLine();
+ System.out.print(&quot;Enter member age: &quot;);
+ int age = scanner.nextInt();
+ System.out.print(&quot;Is the membership active? (true/false): &quot;);
+ boolean isActive = scanner.nextBoolean();
+ System.out.print(&quot;Enter membership duration (in months): &quot;);
+ int duration = scanner.nextInt();
+ System.out.println(&quot;\nMember Details:&quot;);
+ System.out.println(&quot;Name: &quot; + name);
+ System.out.println(&quot;Age: &quot; + age);
+ System.out.println(&quot;Membership Status: &quot; + (isActive ? &quot;Active&quot; : &quot;Inactive&quot;));
+ System.out.println(&quot;Membership Duration: &quot; + duration + &quot; months&quot;);
+ System.out.println(&quot;Membership Fee: $&quot; + membershipFee);
+ scanner.close();
+ }
+}
+
+
+1B)
+public class ChessboardPattern {
+public static void main(String[] args) {
+int size = 8; // Size of the chessboard
+// Loop through each row
+for (int i = 0; i &lt; size; i++) {
+// Loop through each column
+for (int j = 0; j &lt; size; j++) {
+// Check if the sum of row and column indices is even
+if ((i + j) % 2 == 0) {
+// Print black square for even sum
+System.out.print(&quot;**&quot;);
+} else {
+// Print white square for odd sum
+System.out.print(&quot; &quot;);
+}
+}
+
+
+
+2a)
+public class boxing {
+  public static void main(String[] args) {
+                Integer boxedInt = Integer.valueOf(10);
+     Double boxedDouble = Double.valueOf(20.5);
+     Character boxedChar = Character.valueOf(&#39;A&#39;);
+     Boolean boxedBoolean = Boolean.valueOf(true);
+     Float boxedFloat = Float.valueOf(30.5f);
+     int unboxedInt = boxedInt.intValue();
+     double unboxedDouble = boxedDouble.doubleValue
+     char unboxedChar = boxedChar.charValue();
+
+     boolean unboxedBoolean = boxedBoolean.booleanValue();
+
+      float unboxedFloat = boxedFloat.floatValue();
+
+      System.out.println(&quot;Boxed Integer: &quot; + boxedInt);
+      System.out.println(&quot;Unboxed Integer: &quot; + unboxedInt);
+      System.out.println(&quot;Boxed Double: &quot; + boxedDouble);
+      System.out.println(&quot;Unboxed Double: &quot; + unboxedDouble);
+      System.out.println(&quot;Boxed Character: &quot; + boxedChar);
+      System.out.println(&quot;Unboxed Character: &quot; + unboxedChar);
+      System.out.println(&quot;Boxed Boolean: &quot; + boxedBoolean);
+      System.out.println(&quot;Unboxed Boolean: &quot; + unboxedBoolean);
+      System.out.println(&quot;Boxed Float: &quot; + boxedFloat);
+      System.out.println(&quot;Unboxed Float: &quot; + unboxedFloat);
+      }
+}
